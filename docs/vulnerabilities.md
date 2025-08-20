@@ -29,7 +29,7 @@ This document contains step-by-step exploitation and explanation for all vulnera
 **Fix Recommendation:**  
 - Use parameterized queries / prepared statements:
 
-```python
+python
 cur.execute("SELECT id, username FROM users WHERE username=? AND password=?, (u, p))
 
 
